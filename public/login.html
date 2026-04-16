@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testchat. | Вход</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="auth-body">
+    <main class="auth-layout">
+      <section class="auth-panel">
+        <div class="auth-panel__box">
+          <h1>testchat.</h1>
+
+          <div class="tabs">
+            <button class="tab-button is-active" data-tab="login" type="button">Вход</button>
+            <button class="tab-button" data-tab="register" type="button">Регистрация</button>
+          </div>
+
+          <form class="form is-active" id="login-form">
+            <label class="field">
+              <span>Логин</span>
+              <input type="text" name="username" placeholder="Например, roma" required />
+            </label>
+
+            <label class="field">
+              <span>Пароль</span>
+              <input type="password" name="password" placeholder="Минимум 4 символа" required />
+            </label>
+
+            <button class="primary-button" type="submit">
+              <span class="material-symbols-outlined">login</span>
+              Войти
+            </button>
+          </form>
+
+          <form class="form" id="register-form">
+            <label class="field">
+              <span>Имя в чате</span>
+              <input type="text" name="displayName" placeholder="Как показывать вас в сообщениях" required />
+            </label>
+
+            <label class="field">
+              <span>Логин</span>
+              <input type="text" name="username" placeholder="Только буквы, цифры и _" required />
+            </label>
+
+            <label class="field">
+              <span>Пароль</span>
+              <input type="password" name="password" placeholder="Минимум 4 символа" required />
+            </label>
+
+            <button class="primary-button" type="submit">
+              <span class="material-symbols-outlined">person_add</span>
+              Создать аккаунт
+            </button>
+          </form>
+
+          <p class="status-message" id="auth-status"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
